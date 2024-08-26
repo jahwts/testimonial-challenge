@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* max-width: 1440px; */
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    /* font-weight: 500; */
+}
+
+#container {
+    margin: 10% auto;
+    width: 90%;
+    min-width: 300px;
+}
+
+.grid-object {
+    padding: 20px 40px;
+    padding-bottom: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px hsla(217, 19%, 35%, 0.2);
+    color: white;
+}
+
+#top-left {
+    background-color:  hsl(263, 55%, 52%);
+    position: relative;
+}
+
+#top-right {
+    background-color:   hsl(217, 19%, 35%);
+}
+
+#bottom-left,
+#right-section {
+    background-color:   hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+.quotation,
+#bottom-left img,
+#right-section img {
+    border: none;
+}
+
+.quotation {
+    position: absolute;
+    z-index: 0;
+    border-radius: 0%;
+    right:10%;
+    scale: 1.1;
+}
+
+#bottom-right {
+    background-color:   hsl(219, 29%, 14%);
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+img {
+    border-radius: 50%;
+    scale: 80%;
+    transform-origin: left;
+    border: 1px solid hsl(263, 55%, 52%);
+}
+
+.name-graduate {
+    margin-left: 5px;
+    position: relative;
+}
+
+.graduate {
+    opacity: 50%;
+    font-size: 13px;
+    margin-top: 3%;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.review {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 70%;
+}
+
+@media (min-width: 756px) {
+    #container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        width: 65%;
+        min-width: 850px;
+    }
+
+    #left-section {
+        flex-basis: 76%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right-section {
+        flex-basis: 24%;
+    }
+
+    #top,
+    #bottom {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #top-left,
+    #bottom-right {
+        flex-basis: 67%;
+    }
+
+    #top-right,
+    #bottom-left {
+        flex-basis: 33%;
+    }
+}
